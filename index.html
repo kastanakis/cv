@@ -57,27 +57,19 @@
         .contact i {
             margin-right: 5px;
         }
-        /* Masonry-like layout with multiple columns */
+        /* Grid Layout with no overlap */
         .grid {
-            column-count: 2; /* Adjust for how many columns you want */
-            column-gap: 20px;
-        }
-
-        @media (max-width: 800px) {
-            .grid {
-                column-count: 1;
-            }
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
         }
 
         .card {
-            display: inline-block; /* to let column layout flow around each card's height */
-            width: 100%;
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(8px);
-            margin-bottom: 20px;
         }
         .card h2 {
             color: #00a8ff;
@@ -87,12 +79,13 @@
             margin-top: 0;
         }
         ul {
-            list-style: disc;
-            margin-left: 1.5em;
+            list-style: disc outside;
+            margin: 10px 0 0 1.5em;
             padding-left: 0;
         }
         ul li {
             margin-bottom: 8px;
+            text-indent: 0; /* Ensure bullet text lines up nicely */
         }
         a {
             color: #1abc9c;
@@ -116,10 +109,6 @@
         .icon {
             margin-right: 6px;
         }
-        /* Minor spacing fixes */
-        .card ul {
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
@@ -137,7 +126,7 @@
             </div>
         </div>
 
-        <!-- Masonry Layout for Cards -->
+        <!-- 2-column Grid -->
         <div class="grid">
             <!-- Research Experience -->
             <div class="card">
