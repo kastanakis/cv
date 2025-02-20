@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Savvas V. Kastanakis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- New Aesthetic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background: linear-gradient(135deg, #1a1a2e, #16213e);
             color: #eee;
             margin: 0;
@@ -38,19 +39,14 @@
             background: rgba(0, 0, 0, 0.2);
             border-radius: 10px;
         }
+        /* Revert to default bullet styling with a nice look */
         ul {
-            list-style: none;
+            list-style: disc;
+            margin-left: 1.5em;
             padding-left: 0;
         }
         ul li {
-            margin-bottom: 6px;
-        }
-        ul li::before {
-            content: "\f058";
-            font-family: 'Font Awesome 5 Free';
-            color: #00a8ff;
-            padding-right: 10px;
-            font-weight: 900;
+            margin-bottom: 8px;
         }
         a {
             color: #1abc9c;
@@ -63,8 +59,11 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        /* Ensure the image is not distorted by keeping a square shape with object-fit */
         .photo img {
             width: 150px;
+            height: 150px;
+            object-fit: cover;
             border-radius: 50%;
             border: 4px solid #00a8ff;
             box-shadow: 0 4px 8px rgba(0, 168, 255, 0.5);
