@@ -20,6 +20,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            text-align: center;
         }
         h1, h2 {
             color: #3498db;
@@ -28,6 +29,7 @@
         }
         .section {
             margin-bottom: 25px;
+            text-align: left;
         }
         .contact {
             font-size: 16px;
@@ -35,6 +37,7 @@
             background: #333;
             padding: 10px;
             border-radius: 5px;
+            display: inline-block;
         }
         ul {
             padding-left: 20px;
@@ -48,13 +51,13 @@
             text-decoration: underline;
         }
         .photo {
-            text-align: center;
             margin-bottom: 20px;
         }
         .photo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
             border: 3px solid #3498db;
         }
     </style>
@@ -62,7 +65,7 @@
 <body>
     <div class="container">
         <div class="photo">
-            <img src="20240520_185556 (1).jpg" alt="Savvas V. Kastanakis">
+            <img src="sk.jpg" alt="Savvas V. Kastanakis">
         </div>
         <h1>Savvas V. Kastanakis</h1>
         <p class="contact">
@@ -70,58 +73,46 @@
             Email: <a href="mailto:s.kastanakis@utwente.nl">s.kastanakis@utwente.nl</a> |
             <a href="https://www.linkedin.com/in/savvas-kastanakis" target="_blank">LinkedIn Profile</a>
         </p>
-
+        
         <div class="section">
-            <h2>Research Experience</h2>
+            <h2>Grants</h2>
             <ul>
-                <li><strong>Postdoctoral Researcher</strong> (2024-2026), University of Twente</li>
-                <li><strong>Research Engineer</strong> (2024), NTUA</li>
-                <li><strong>Research Intern</strong> (2022), SimulaMet</li>
-                <li><strong>Research Field Editor</strong> (2022), TIB Leibniz Information Centre</li>
-                <li><strong>Research Engineer</strong> (2020), Lancaster University</li>
-                <li><strong>Graduate Student Researcher</strong> (2018-2020), FORTH</li>
+                <li>RACI Fellowship, RIPE 88, Krakow, Poland, 2024.</li>
+                <li>Travel Grant, ACM Internet Measurement Conference, Nice, France, 2022.</li>
+                <li>Curation Grant, TIB Leibniz Information Centre, Germany, 2022.</li>
+                <li>Travel Grant, HiPEAC Student Challenge VII, Bilbao, Spain, 2019.</li>
             </ul>
         </div>
-
+        
         <div class="section">
-            <h2>Education</h2>
+            <h2>Community Service</h2>
             <ul>
-                <li><strong>Ph.D. in Computer Science</strong>, Lancaster University, UK (2020-2024)</li>
-                <li><strong>M.Sc. in Computer Science</strong>, University of Crete, Greece (2018-2020)</li>
-                <li><strong>B.Sc. in Computer Science</strong>, University of Crete, Greece (2011-2018)</li>
+                <li>Peer-Reviewer in IEEE/ACM Transactions on Networking, 2024.</li>
+                <li>Peer-Reviewer in IEEE Internet of Things Journal, 2019.</li>
+                <li>Student Member of ACM, 2019.</li>
+                <li>Volunteer at ACM CoNEXT ’18, Dec 4 - Dec 7, 2018.</li>
             </ul>
         </div>
-
-        <div class="section">
-            <h2>Teaching Experience</h2>
-            <ul>
-                <li>Teaching Assistant, Lancaster University (2020-2023)</li>
-                <li>Teaching Assistant, University of Crete (2018-2020)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Distinctions & Honors</h2>
-            <ul>
-                <li>Honourable Mention, XVIII Workshop on Performance of Computer and Communication Systems (2019)</li>
-                <li>Second Prize, 1st ACM SIGCOMM Hackathon (2018)</li>
-                <li>Undergraduate Scholarship, ICS FORTH (2016)</li>
-            </ul>
-        </div>
-
+        
         <div class="section">
             <h2>Peer-Reviewed Publications</h2>
             <ul>
                 <li>S. Kastanakis, V. Giotsas, I. Livadariu, and N. Suri. "Investigating Location-aware Advertisements in Anycast IP Networks," ANRW'24.</li>
                 <li>S. Kastanakis, V. Giotsas, I. Livadariu, and N. Suri. "Replication: 20 Years of Inferring Interdomain Routing Policies," ACM IMC '23.</li>
+                <li>S. Kastanakis, P. Sermpezis, V. Kotronis, D. Menasche, and T. Spyropoulos. "Network-aware Recommendations in the Wild: Methodology, Realistic Evaluations, Experiments," IEEE Transactions on Mobile Computing, December 2020.</li>
+                <li>P. Sermpezis, S. Kastanakis, J. Pinheiro, F. Assis, M. Nogueira, D. Menasche, and T. Spyropoulos. "Towards QoS-Aware Recommendations," ACM RecSys CARS 2.0 ’20.</li>
+                <li>F. Assis, M. Nogueira, D. Menasche, J. Pinheiro, P. Sermpezis, S. Kastanakis, and T. Spyropoulos. "Content Recommendation and QoE: An Experimental Study," XVIII Workshop on Performance of Computer and Communication Systems, 2019.</li>
+                <li>S. Kastanakis, P. Sermpezis, V. Kotronis, and X. Dimitropoulos. "CABaRet: Leveraging Recommendation Systems for Mobile Edge Caching," ACM SIGCOMM MECOMM ’18.</li>
             </ul>
         </div>
-
+        
         <div class="section">
             <h2>Poster Sessions</h2>
             <ul>
-                <li>S. Kastanakis, C. Hesselman. "From Policy to Practice: A Research Agenda for Measurement-based BGP Risk Assessment," CSNG '24.</li>
-                <li>S. Kastanakis, V. Giotsas, N. Suri. "Understanding the Confounding Factors of Interdomain Routing Modeling," ACM IMC '22.</li>
+                <li>S. Kastanakis, C. Hesselman. "From Policy to Practice: A Research Agenda for Measurement-based BGP Risk Assessment," 2024 ACCSS Cyber Security Next Generation Workshop (CSNG ’24).</li>
+                <li>S. Kastanakis, V. Giotsas, N. Suri. "Understanding the Confounding Factors of Interdomain Routing Modeling," 2022 ACM Internet Measurement Conference (IMC ’22).</li>
+                <li>S. Kastanakis, D. Bakalios, I. Konstantakis, V. Karagiannakis. "Open Agriculture of Things: Towards An Open Source IoT-based Sustainable Agriculture," 2019 HiPEAC CSW Autumn.</li>
+                <li>S. Kastanakis, M. Nogueira, F. Assis, P. Sermpezis, D. Menasche, and T. Spyropoulos. "Towards QoS-friendly Content Recommendations: An Experimental Framework," 2018 ACM CoNEXT ’18.</li>
             </ul>
         </div>
     </div>
