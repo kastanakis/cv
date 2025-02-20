@@ -57,17 +57,27 @@
         .contact i {
             margin-right: 5px;
         }
+        /* Masonry-like layout with multiple columns */
         .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 20px;
+            column-count: 2; /* Adjust for how many columns you want */
+            column-gap: 20px;
         }
+
+        @media (max-width: 800px) {
+            .grid {
+                column-count: 1;
+            }
+        }
+
         .card {
+            display: inline-block; /* to let column layout flow around each card's height */
+            width: 100%;
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(8px);
+            margin-bottom: 20px;
         }
         .card h2 {
             color: #00a8ff;
@@ -127,7 +137,7 @@
             </div>
         </div>
 
-        <!-- Grid Layout for Cards -->
+        <!-- Masonry Layout for Cards -->
         <div class="grid">
             <!-- Research Experience -->
             <div class="card">
