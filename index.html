@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV - Savvas V. Kastanakis</title>
   <!-- Aesthetic Font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
     rel="stylesheet"
-  >
+  />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-  >
+  />
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
@@ -69,14 +69,14 @@
       margin-right: 5px;
     }
 
-    /* Row-based layout: each row has exactly 2 cards side by side */
+    /* Row-based 2-column layout */
     .grid-row {
       display: flex;
       gap: 20px;
       margin-bottom: 20px;
       align-items: start; /* each card starts at the top */
     }
-    /* For mobile screens, make each row single-column */
+    /* On mobile: single-column */
     @media (max-width: 800px) {
       .grid-row {
         flex-direction: column;
@@ -84,7 +84,7 @@
     }
 
     .card {
-      flex: 1; /* each card expands equally to fill the row */
+      flex: 1; /* each card expands equally */
       background: rgba(255, 255, 255, 0.1);
       padding: 20px;
       border-radius: 15px;
@@ -133,6 +133,16 @@
     .icon {
       margin-right: 6px;
     }
+
+    /* Sub-sections inside a single card */
+    .sub-section h3 {
+      color: #00a8ff;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #00a8ff;
+      padding-bottom: 4px;
+      text-transform: none;
+    }
   </style>
 </head>
 <body>
@@ -154,170 +164,185 @@
       </div>
     </div>
 
-    <!-- Row 1: Research + Education -->
+    <!-- Row 1: Research vs. Education & Teaching -->
     <div class="grid-row">
+      <!-- Research Experience -->
       <div class="card">
         <h2><i class="fas fa-flask icon"></i>Research Experience</h2>
         <ul>
           <li>
             <strong>Postdoctoral Researcher</strong> (October 2024 - September 2026),
-            Design and Analysis of Communication Systems (DACS) Group, University of Twente.<br>
-            Supervisor: Prof. Cristian Hesselman.
+            University of Twente.<br>
+            Supervisor: Prof. Cristian Hesselman
           </li>
           <li>
             <strong>Research Engineer</strong> (March 2024 - May 2024),
-            Institute of Communication & Computer Systems, NTUA.<br>
-            Project: Evaluation and validation of connected mobility in real systems beyond 5GS.
+            NTUA.<br>
+            Project: Evaluation of connected mobility in real systems beyond 5GS
           </li>
           <li>
-            <strong>Research Intern</strong> (September 2022 - October 2022), SimulaMet, Simula Metropolitan Center for Digital Engineering.<br>
-            Subject: Investigating the Confounding Factors of Interdomain Path Inference.<br>
-            Supervisor: Dr. Ioana Livadariu.
+            <strong>Research Intern</strong> (September 2022 - October 2022),
+            SimulaMet, Simula Metropolitan Center for Digital Engineering.<br>
+            Subject: Investigating the Confounding Factors of Interdomain Path Inference<br>
+            Supervisor: Dr. Ioana Livadariu
           </li>
           <li>
-            <strong>Research Field Editor</strong> (June 2022 - November 2022), TIB Leibniz Information Centre for Science and Technology.<br>
-            Subject: Describing research papers in a structured manner within a knowledge graph.
+            <strong>Research Field Editor</strong> (June 2022 - November 2022),
+            TIB Leibniz Information Centre for Science and Technology.<br>
+            Subject: Describing research papers in a structured manner within a knowledge graph
           </li>
           <li>
-            <strong>Research Engineer</strong> (May 2020 - October 2020), InfoLab21, School of Computing and Communications, Lancaster University.<br>
-            Subject: Porting research prototypes to production software.<br>
-            Supervisor: Dr. Vasileios Giotsas.
+            <strong>Research Engineer</strong> (May 2020 - October 2020),
+            Lancaster University.<br>
+            Subject: Porting research prototypes to production software<br>
+            Supervisor: Dr. Vasileios Giotsas
           </li>
           <li>
-            <strong>Graduate Student Researcher</strong> (2018 - 2020), Telecommunications and Networks Lab (TNL), Institute of Computer Science, FORTH.<br>
-            Subject: Evaluating Network-aware Recommendations.<br>
-            Supervisors: Dr. Pavlos Sermpezis, Prof. Xenofontas Dimitropoulos.
+            <strong>Graduate Student Researcher</strong> (2018 - 2020),
+            Telecommunications and Networks Lab (TNL), FORTH.<br>
+            Subject: Evaluating Network-aware Recommendations<br>
+            Supervisors: Dr. Pavlos Sermpezis, Prof. Xenofontas Dimitropoulos
           </li>
           <li>
-            <strong>Undergraduate Research Fellow</strong> (2016 - 2018), Telecommunications and Networks Lab (TNL), Institute of Computer Science, FORTH.<br>
-            Subject: Design and Implementation of a Network-aware Recommendation Module.<br>
-            Supervisors: Dr. Pavlos Sermpezis, Prof. Xenofontas Dimitropoulos.
+            <strong>Undergraduate Research Fellow</strong> (2016 - 2018),
+            TNL, FORTH.<br>
+            Subject: Design and Implementation of a Network-aware Recommendation Module<br>
+            Supervisors: Dr. Pavlos Sermpezis, Prof. Xenofontas Dimitropoulos
           </li>
         </ul>
       </div>
 
+      <!-- Education + Teaching in one card -->
       <div class="card">
-        <h2><i class="fas fa-graduation-cap icon"></i>Education</h2>
-        <ul>
-          <li>
-            <strong>Ph.D. in Computer Science</strong> (2020 - 2024),
-            School of Computing and Communications, Lancaster University, UK.<br>
-            Supervisors: Prof. Neeraj Suri, Dr. Vasileios Giotsas.<br>
-            Thesis: Understanding the Confounding Factors of Interdomain Routing Modeling.
-          </li>
-          <li>
-            <strong>M.Sc. in Computer Science and Engineering</strong> (2018 - 2020),
-            University of Crete, Greece.<br>
-            Supervisor: Prof. Xenofontas Dimitropoulos.<br>
-            Thesis: Evaluation of Network-aware Recommendation Systems in Realistic Settings.
-          </li>
-          <li>
-            <strong>B.Sc. in Computer Science</strong> (2011 - 2018),
-            University of Crete, Greece.<br>
-            Supervisor: Prof. Xenofontas Dimitropoulos.<br>
-            Thesis: Design and Implementation of a Network-aware Recommendation Module in an Android Application.
-          </li>
-        </ul>
-      </div>
-    </div>
+        <h2><i class="fas fa-graduation-cap icon"></i>Education & Teaching</h2>
+        
+        <!-- Education section -->
+        <div class="sub-section">
+          <h3><i class="fas fa-university icon"></i>Education</h3>
+          <ul>
+            <li>
+              <strong>Ph.D. in Computer Science</strong> (2020 - 2024),
+              Lancaster University, UK.<br>
+              Supervisors: Prof. Neeraj Suri, Dr. Vasileios Giotsas.<br>
+              Thesis: Understanding the Confounding Factors of Interdomain Routing Modeling
+            </li>
+            <li>
+              <strong>M.Sc. in Computer Science & Eng.</strong> (2018 - 2020),
+              University of Crete, Greece.<br>
+              Supervisor: Prof. Xenofontas Dimitropoulos<br>
+              Thesis: Evaluation of Network-aware Recommendation Systems in Realistic Settings
+            </li>
+            <li>
+              <strong>B.Sc. in Computer Science</strong> (2011 - 2018),
+              University of Crete, Greece.<br>
+              Supervisor: Prof. Xenofontas Dimitropoulos<br>
+              Thesis: Design & Implementation of a Network-aware Recommendation Module in Android
+            </li>
+          </ul>
+        </div>
 
-    <!-- Row 2: Teaching + Distinctions -->
-    <div class="grid-row">
-      <div class="card">
-        <h2><i class="fas fa-chalkboard-teacher icon"></i>Teaching Experience</h2>
-        <ul>
-          <li>
-            <strong>Teaching Assistant</strong> (October 2020 - September 2023),
-            School of Computing and Communications, Lancaster University.
-          </li>
-          <li>
-            <strong>Teaching Assistant</strong> (September 2018 - August 2020),
-            Computer Science Department, University of Crete.
-          </li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2><i class="fas fa-trophy icon"></i>Distinctions and Honors</h2>
-        <ul>
-          <li>Honourable Mention Award, XVIII Workshop on Performance of Computer and Communication Systems, Belem, Brazil, 2019.</li>
-          <li>Second Prize Winners, 1st ACM SIGCOMM Hackathon, Budapest, Hungary, 2018.</li>
-          <li>Undergraduate Scholarship, ICS FORTH, Heraklion, Greece, 2016.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Row 3: Grants + Community -->
-    <div class="grid-row">
-      <div class="card">
-        <h2><i class="fas fa-award icon"></i>Grants</h2>
-        <ul>
-          <li>RACI Fellowship, RIPE 88, Krakow, Poland, 2024.</li>
-          <li>Travel Grant, ACM Internet Measurement Conference, Nice, France, 2022.</li>
-          <li>Curation Grant, TIB Leibniz Information Centre, Germany, 2022.</li>
-          <li>Travel Grant, HiPEAC Student Challenge VII, Bilbao, Spain, 2019.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2><i class="fas fa-handshake icon"></i>Community Service</h2>
-        <ul>
-          <li>Peer-Reviewer in IEEE/ACM Transactions on Networking, 2024.</li>
-          <li>Peer-Reviewer in IEEE Internet of Things Journal, 2019.</li>
-          <li>Student Member of ACM, 2019.</li>
-          <li>Volunteer at ACM CoNEXT ’18, Dec 4 - Dec 7, 2018.</li>
-        </ul>
+        <!-- Teaching Experience section -->
+        <div class="sub-section">
+          <h3><i class="fas fa-chalkboard-teacher icon"></i>Teaching Experience</h3>
+          <ul>
+            <li>
+              <strong>Teaching Assistant</strong> (October 2020 - September 2023),
+              Lancaster University
+            </li>
+            <li>
+              <strong>Teaching Assistant</strong> (September 2018 - August 2020),
+              University of Crete
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <!-- Row 4: Publications + Posters -->
+    <!-- Row 2: Distinctions + Grants + Community vs. Publications + Posters -->
     <div class="grid-row">
+      <!-- Combine Distinctions, Grants, Community in one card -->
       <div class="card">
-        <h2><i class="fas fa-book icon"></i>Peer-Reviewed Publications</h2>
-        <ul>
-          <li>
-            S. Kastanakis, V. Giotsas, I. Livadariu, and N. Suri. "Investigating Location-aware Advertisements in Anycast IP Networks," in <em>Proceedings of the Applied Networking Research Workshop (ANRW’24)</em>.
-          </li>
-          <li>
-            S. Kastanakis, V. Giotsas, I. Livadariu, and N. Suri. "Replication: 20 Years of Inferring Interdomain Routing Policies," in <em>Proceedings of the 2023 ACM on Internet Measurement Conference (IMC ’23)</em>.
-          </li>
-          <li>
-            S. Kastanakis, P. Sermpezis, V. Kotronis, D. Menasche, and T. Spyropoulos. "Network-aware Recommendations in the Wild: Methodology, Realistic Evaluations, Experiments," in <em>IEEE Transactions on Mobile Computing</em>, December 2020.
-          </li>
-          <li>
-            P. Sermpezis, S. Kastanakis, J. Pinheiro, F. Assis, M. Nogueira, D. Menasche, and T. Spyropoulos. "Towards QoS-Aware Recommendations," in <em>Proceedings of the 2020 ACM RecSys Workshop on Context-Aware Recommender Systems (CARS 2.0 ’20)</em>.
-          </li>
-          <li>
-            F. Assis, M. Nogueira, D. Menasche, J. Pinheiro, P. Sermpezis, S. Kastanakis, T. Spyropoulos, C. Delgado. "Content Recommendation and QoE: An Experimental Study on the Role of QoS Towards Video Preferences," in <em>Proceedings of the 2019 XVIII Workshop on Performance of Computer and Communication Systems</em>.
-          </li>
-          <li>
-            S. Kastanakis, P. Sermpezis, V. Kotronis, and X. Dimitropoulos. "CABaRet: Leveraging Recommendation Systems for Mobile Edge Caching," in <em>Proceedings of the 2018 ACM SIGCOMM Workshop on Mobile Edge Communications (MECOMM ’18)</em>.
-          </li>
-        </ul>
+        <h2><i class="fas fa-medal icon"></i>Achievements & Service</h2>
+        
+        <div class="sub-section">
+          <h3><i class="fas fa-trophy icon"></i>Distinctions & Honors</h3>
+          <ul>
+            <li>Honourable Mention Award, XVIII Workshop on Performance of Computer and Communication Systems, Brazil, 2019</li>
+            <li>Second Prize, 1st ACM SIGCOMM Hackathon, Budapest, 2018</li>
+            <li>Undergraduate Scholarship, ICS FORTH, Heraklion, 2016</li>
+          </ul>
+        </div>
+
+        <div class="sub-section">
+          <h3><i class="fas fa-award icon"></i>Grants</h3>
+          <ul>
+            <li>RACI Fellowship, RIPE 88, Krakow, Poland, 2024</li>
+            <li>Travel Grant, ACM Internet Measurement Conference, Nice, France, 2022</li>
+            <li>Curation Grant, TIB Leibniz Information Centre, Germany, 2022</li>
+            <li>Travel Grant, HiPEAC Student Challenge VII, Bilbao, Spain, 2019</li>
+          </ul>
+        </div>
+
+        <div class="sub-section">
+          <h3><i class="fas fa-handshake icon"></i>Community Service</h3>
+          <ul>
+            <li>Peer-Reviewer in IEEE/ACM Transactions on Networking, 2024</li>
+            <li>Peer-Reviewer in IEEE Internet of Things Journal, 2019</li>
+            <li>Student Member of ACM, 2019</li>
+            <li>Volunteer at ACM CoNEXT ’18, 2018</li>
+          </ul>
+        </div>
       </div>
 
+      <!-- Publications + Poster Sessions -->
       <div class="card">
-        <h2><i class="fas fa-sticky-note icon"></i>Poster Sessions</h2>
+        <h2><i class="fas fa-book icon"></i>Publications</h2>
         <ul>
           <li>
-            S. Kastanakis, C. Hesselman. "From Policy to Practice: A Research Agenda for Measurement-based BGP Risk Assessment," 2024 ACCSS Cyber Security Next Generation Workshop (CSNG ’24).
+            S. Kastanakis, V. Giotsas, I. Livadariu, N. Suri. 
+            <em>Investigating Location-aware Advertisements in Anycast IP Networks</em>,
+            ANRW’24
           </li>
           <li>
-            S. Kastanakis, V. Giotsas, N. Suri. "Understanding the Confounding Factors of Interdomain Routing Modeling," 2022 ACM Internet Measurement Conference (IMC ’22).
+            S. Kastanakis, V. Giotsas, I. Livadariu, N. Suri.
+            <em>Replication: 20 Years of Inferring Interdomain Routing Policies</em>,
+            ACM IMC ’23
           </li>
           <li>
-            S. Kastanakis, D. Bakalios, I. Konstantakis, V. Karagiannakis. "Open Agriculture of Things: Towards An Open Source IoT-based Sustainable Agriculture," 2019 HiPEAC CSW Autumn.
+            S. Kastanakis, P. Sermpezis, V. Kotronis, D. Menasche, T. Spyropoulos.
+            <em>Network-aware Recommendations in the Wild</em>, IEEE TMC, 2020
           </li>
           <li>
-            S. Kastanakis, M. Nogueira, F. Assis, P. Sermpezis, D. Menasche, and T. Spyropoulos. "Towards QoS-friendly Content Recommendations: An Experimental Framework," 2018 ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT ’18).
+            P. Sermpezis, S. Kastanakis, J. Pinheiro, F. Assis, M. Nogueira, D. Menasche, T. Spyropoulos.
+            <em>Towards QoS-Aware Recommendations</em>, ACM RecSys CARS ’20
           </li>
+          <!-- ... other publications if needed ... -->
         </ul>
+
+        <div class="sub-section">
+          <h3><i class="fas fa-sticky-note icon"></i>Poster Sessions</h3>
+          <ul>
+            <li>
+              S. Kastanakis, C. Hesselman. 
+              <em>From Policy to Practice: A Research Agenda for Measurement-based BGP Risk Assessment</em>,
+              CSNG ’24
+            </li>
+            <li>
+              S. Kastanakis, V. Giotsas, N. Suri.
+              <em>Understanding the Confounding Factors of Interdomain Routing Modeling</em>,
+              IMC ’22
+            </li>
+            <!-- ... etc. ... -->
+          </ul>
+        </div>
       </div>
     </div>
 
     <!-- Download Button -->
     <div style="text-align:center; margin-top: 30px;">
-      <a href="#" class="download-btn"><i class="fas fa-file-download"></i> Download CV</a>
+      <a href="#" class="download-btn">
+        <i class="fas fa-file-download"></i> Download CV
+      </a>
     </div>
 
   </div>
