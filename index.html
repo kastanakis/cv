@@ -50,13 +50,14 @@
       margin-bottom: 20px;
     }
     .photo img {
-      width: 150px;
-      height: 150px;
+      max-width: 30%; /* Image scales relative to its container */
+      height: auto; /* Maintains aspect ratio */
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid #00a8ff;
-      box-shadow: 0 4px 8px rgba(0, 168, 255, 0.5);
+      border: 5px solid #00a8ff;
+      box-shadow: 0 6px 12px rgba(0, 168, 255, 0.5);
     }
+
 
     .contact {
       padding: 15px;
